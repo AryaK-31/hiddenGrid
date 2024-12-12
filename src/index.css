@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto+Mono:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  margin: 0;
+  font-family: "Roboto Mono", monospace; /* Lovely font for text */
+  background-color: black;
+}
+
+h1 {
+  font-family: "Great Vibes", cursive; /* Romantic cursive font */
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Custom Keyframe Animation */
+@keyframes fade-slide-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/* Tailwind Animation Utility */
+.animate-fade-slide-in {
+  animation: fade-slide-in 1.5s ease-out;
+}
